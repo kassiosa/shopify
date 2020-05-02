@@ -1,0 +1,51 @@
+.Polaris-Choice__Label {
+  color: #3D424D;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: initial;
+  letter-spacing: initial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.Polaris-Label__Text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3D424D;
+  line-height: 2rem;
+  text-transform: initial;
+  letter-spacing: initial;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  flex: 1 1 auto;
+}
+
+.app {
+  background: #FFFFFF;
+  border: 1px solid #E2E4E5;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 20px 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.modal-config, .devices-config {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-config .Polaris-Choice, .devices-config .Polaris-Choice {
+  margin-bottom: 5px;
+}
+
+.modal-config {
+  width: 60%;
+}
+
+.devices-config {
+  margin-left: 20px;
+}
