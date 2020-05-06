@@ -110,6 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_2__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+ // import logo from '../assets/images/logo.png';
 
 
 
@@ -151,7 +152,7 @@ const Index = () => {
     1: setDesktopDisableText
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Page"], {
-    title: "Example app"
+    title: "Nosso plugin"
   }, __jsx("div", {
     className: "app"
   }, __jsx("div", {
@@ -161,19 +162,21 @@ const Index = () => {
   }, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Checkbox"], {
     label: "Enable modal",
     checked: modalEnable
-  }), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
-    label: "Modal title",
+  }), __jsx("div", {
+    className: "textarea"
+  }, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
+    label: "T\xEDtulo do aviso",
     value: modalTitle,
     multiline: 3
-  }), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
+  })), __jsx("div", {
+    className: "textarea"
+  }, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     label: "Modal desc",
     value: modalDescription,
     multiline: 3
-  })), __jsx("div", {
+  }))), __jsx("div", {
     className: "devices-config"
-  }, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["TextStyle"], {
-    variation: "strong"
-  }, "Good evening, Dominic."), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Checkbox"], {
+  }, __jsx("p", null, "Op\xE7\xF5es de controle para celular"), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Checkbox"], {
     label: "Disable mobile image",
     checked: mobileDisableImage,
     onChange: newChecked => {
@@ -185,6 +188,8 @@ const Index = () => {
     onChange: newChecked => {
       setMobileDisableText(newChecked);
     }
+  }), __jsx("div", {
+    className: "separator"
   }), __jsx("p", null, "Op\xE7\xF5es de controle para desktop"), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Checkbox"], {
     label: "Disable desktop menu",
     checked: desktopDisableMenu,
@@ -200,9 +205,12 @@ const Index = () => {
   }), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Checkbox"], {
     label: "Disable desktop text",
     checked: desktopDisableText
-  }))), __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Button"], {
-    size: "large"
-  }, "Save")));
+  }))), __jsx("div", {
+    className: "footer"
+  }, __jsx(_shopify_polaris__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    size: "large",
+    primary: "false"
+  }, "Save"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -227,7 +235,7 @@ const Index = () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kassio/Apps/sample-embedded-app/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /home/kassio/Apps/shopify/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

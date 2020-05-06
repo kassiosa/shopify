@@ -8,6 +8,8 @@ import {
   TextField,
 } from '@shopify/polaris';
 
+// import logo from '../assets/images/logo.png';
+
 import './styles.css';
 
 const Index = () => {
@@ -25,7 +27,7 @@ const Index = () => {
 
 
   return (
-    <Page title="Example app">
+    <Page title="Nosso plugin">
       <div className="app">
         <div className="form-container">
           <div className="modal-config">
@@ -33,21 +35,27 @@ const Index = () => {
               label="Enable modal"
               checked={modalEnable}
             />
-            <TextField
-              label="Modal title"
-              value={modalTitle}
-              multiline={3}
-            />
-            <TextField
-              label="Modal desc"
-              value={modalDescription}
-              multiline={3}
-            />
+
+            <div className="textarea">
+              <TextField
+                label="Título do aviso"
+                value={modalTitle}
+                multiline={3}
+              />
+            </div>
+
+            <div className="textarea">
+              <TextField
+                label="Modal desc"
+                value={modalDescription}
+                multiline={3}
+              />
+            </div>
           </div>
 
           <div className="devices-config">
-            {/* <p>Opções de controle para celular</p> */}
-            <TextStyle variation="strong">Good evening, Dominic.</TextStyle>
+            <p>Opções de controle para celular</p>
+            {/* <TextStyle variation="strong">Good evening, Dominic.</TextStyle> */}
             <Checkbox
               label="Disable mobile image"
               checked={mobileDisableImage}
@@ -62,6 +70,8 @@ const Index = () => {
                 setMobileDisableText(newChecked);
               }}
             />
+
+            <div className="separator" />
 
             <p>Opções de controle para desktop</p>
             <Checkbox
@@ -89,9 +99,13 @@ const Index = () => {
           </div>
         </div>
       
-        <Button size="large">
-          Save
-        </Button>
+        <div className="footer">
+          <Button size="large" primary="false">
+            Save
+          </Button>
+
+          {/* <images src={logo} /> */}
+        </div>
       </div>
     </Page>
   );

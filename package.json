@@ -22,8 +22,14 @@
     "koa": "^2.11.0",
     "koa-session": "^5.13.1",
     "next": "^9.3.4",
+    "next-images": "^1.4.0",
     "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "url-loader": "^4.1.0"
   }
 }
